@@ -21,7 +21,7 @@ def list_drive(update, context):
             editMessage(f'No result found for <b>{search}</b>', reply, button)
 
     except IndexError:
-        sendMessage('Send a search key along with command', context.bot, update)
+        sendMessage('BRUH', context.bot, update)
 
 
 list_handler = CommandHandler(BotCommands.ListCommand, list_drive, filters=CustomFilters.authorized_chat | CustomFilters.authorized_user, run_async=True)
